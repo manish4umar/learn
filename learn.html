@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple HTML Form</title>
+</head>
+
+<body>
+    <h2>Contact Form</h2>
+
+    <form action="submit_form.php" method="post">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <!-- Gender (Radio Buttons) -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female <br><br>
+        <input type="radio" id="female" name="gender" value="female"> Female <br><br>
+        <input type="radio" id="female" name="gender" value="female"> Female <br><br>
+        <input type="radio" id="female" name="gender" value="female"> Female <br><br>
+        <input type="radio" id="female" name="gender" value="female"> Female <br><br>
+
+        <!-- Courses (Checkboxes) -->
+        <label>Courses:</label><br>
+        <input type="checkbox" name="course" value="HTML"> HTML
+        <input type="checkbox" name="course" value="CSS"> CSS
+        <input type="checkbox" name="course" value="JavaScript"> JavaScript <br><br>
+        <input type="checkbox" name="course" value="JavaScript"> JavaScript <br><br>
+        <input type="checkbox" name="course" value="JavaScript"> JavaScript <br><br>
+        <input type="checkbox" name="course" value="JavaScript"> JavaScript <br><br>
+
+        <!-- Dropdown -->
+        <label for="city">Select your city:</label><br>
+        <select id="city" name="city">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="chennai">Chennai</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
