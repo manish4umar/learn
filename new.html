@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple HTML Form</title>
+</head>
+<body>
+
+  <h2>User Information Form</h2>
+
+  <!-- Form Starts Here -->
+  <form action="submit.php" method="post">
+    
+    <!-- Text Field -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name"><br><br>
+
+    <!-- Email Field -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+    <!-- Password Field -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male"> Male
+    <input type="radio" id="female" name="gender" value="Female"> Female<br><br>
+
+    <!-- Checkbox -->
+    <label>Languages Known:</label><br>
+    <input type="checkbox" name="lang" value="HTML"> HTML
+    <input type="checkbox" name="lang" value="CSS"> CSS
+    <input type="checkbox" name="lang" value="JavaScript"> JavaScript<br><br>
+
+    <!-- Dropdown -->
+    <label for="city">Select City:</label><br>
+    <select id="city" name="city">
+      <option value="delhi">Delhi</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="kolkata">Kolkata</option>
+    </select><br><br>
+
+    <!-- Textarea -->
+    <label for="msg">Message:</label><br>
+    <textarea id="msg" name="message" rows="4" cols="30" placeholder="Type your message here..."></textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+  <!-- Form Ends Here -->
+
+</body>
+</html>
