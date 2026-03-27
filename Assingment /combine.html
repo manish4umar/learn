@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Webpage</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body 
+      .jumbotron {
+        background-color: rgb(234, 230, 114);
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyWebsite</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1 class="display-5">Welcome to My First Webpage</h1>
+        <p class="lead">
+          This is a simple example using Bootstrap classes and basic HTML tags.
+        </p>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+
+      <!-- List example -->
+      <h3>My Daily Tasks:</h3>
+      <ul class="list-group mb-3">
+        <li class="list-group-item">Wake up early</li>
+        <li class="list-group-item">Attend college classes</li>
+        <li class="list-group-item">Do coding practice</li>
+        <li class="list-group-item">Play cricket</li>
+      </ul>
+
+      <h3>Choose your favorite subjects:</h3>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="subject1" />
+        <label class="form-check-label" for="subject1"
+          >Computer Fundamentals</label
+        >
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="subject2" />
+        <label class="form-check-label" for="subject2">C++ Programming</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="subject3" />
+        <label class="form-check-label" for="subject3">Web Development</label>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

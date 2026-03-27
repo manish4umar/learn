@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      style="
+        color: rgb(18, 19, 18);
+        border-radius: 8px;
+        border: 0px;
+        padding: 10px 20px;
+        background-color: rgb(84, 217, 84);
+      "
+      onclick="count +=1;
+      document.getElementById('bag').innerText = 'Your bag has ' + count + ' items';
+      
+      "
+    >
+      Add to bag
+    </button>
+    <button
+      style="border: 0cap; 
+      border-radius: 8px; 
+      font-size: 13px; 
+      padding: 10px 20px" ; 
+      onclick="count -=1;
+      document.getElementById('bag').innerText = 'Your bag has ' + count + ' items';
+      
+      "
+    >
+      ❤️ Wishlist
+    </button>
+    <button
+      style="
+        color: rgb(18, 19, 18);
+        border-radius: 8px;
+        border: 0px;
+        padding: 10px 20px;
+        background-color: rgb(84, 217, 84);
+      "
+      onclick="count +=2;
+      document.getElementById('bag').innerText = 'Your bag has ' + count + ' items';
+      
+      "
+    >
+      Add to 1+1 sale item
+    </button>
+
+    <h2 id="bag">Your Bag has 0  items</h2>
+    <script>
+        let count = 0;
+    </script>
+  </body>
+</html>

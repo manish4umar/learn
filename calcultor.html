@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Basic Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ><center>
+    <h1>Basic Calculator</h1>
+    <div id="main">
+        <input type="text" id="display" readonly>
+        <div id="btn-container">
+            <button class="MyBtn" style="background-color: rgb(231, 204, 73);">C</button>
+            <button class="MyBtn" onclick="display.value += '1';">1</button>
+            <button class="MyBtn" onclick="display.value += '2';">2</button>
+            <button class="MyBtn" onclick="display.value += '3';">3</button>
+            <button class="MyBtn" onclick="display.value += '+';" style="background-color: rgb(0, 255, 128) ";>+</button>
+            <button class="MyBtn" onclick="display.value += '4';">4</button>
+            <button class="MyBtn" onclick="display.value += '5';">5</button>
+            <button class="MyBtn" onclick="display.value += '6';">6</button>
+            <button class="MyBtn" onclick="display.value += '-';" style="background-color: rgb(0, 255, 128) ";>-</button>
+            <button class="MyBtn" onclick="display.value += '7';">7</button>
+            <button class="MyBtn" onclick="display.value += '8';">8</button>
+            <button class="MyBtn" onclick="display.value += '9';">9</button>
+            <button class="MyBtn" onclick="display.value += '*';" style="background-color: rgb(0, 255, 128) ";> *</button>
+            <button class="MyBtn" onclick="display.value += '/';" style="background-color: rgb(0, 255, 128) ";>/</button>
+            <button class="MyBtn" onclick="display.value += '0';">0</button>
+            <button class="MyBtn" style="background-color: yellow ";> x</button>
+            <button class="MyBtn" style="background-color: rgb(235, 236, 225);">=</button>
+            
+            
+        </div>
+    </div>
+    <script>
+        let display = document.getElementById('display');
+        let val = '';
+        display.value = val;
+    </script>
+    </center>
+</body>
+</html>
