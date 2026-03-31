@@ -1,5 +1,5 @@
 #main{
-    background-color: rgb(56, 12, 12);
+    background-color: rgb(16, 3, 3);
     border :5px ;
     width: 270px;
     border-radius: 10px;
@@ -17,7 +17,7 @@
 }
 
 .MyBtn{
-    background-color: rgb(223, 14, 80);
+    background-color: rgb(184, 192, 195);
     border: 5px green;
     border-radius: 10px;
     font-size: 32px;
@@ -34,5 +34,5 @@
     justify-content: center;
 }
 body{
-    background-color: pink;
+    background-color: rgba(65, 31, 37, 0.333);
 }

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      onclick="
+        let c = Math.floor(Math.random() * 3 + 1);
+        console.log(c);
+        if (c == 1) computer = 'Bat';
+
+        if (c == 2) computer = 'Ball';
+
+        if (c == 3) computer = 'Wicket';
+
+        console.log('computer:' + computer);
+
+        user = 'Bat';
+        if (user === 'Bat' && computer === 'Bat') console.log('tie');
+        else if (user === 'Bat' && computer === 'Ball') console.log('User win');
+        else if (user === 'Bat' && computer === 'Wicket')
+          console.log('computer Win');
+      "
+    >
+      Bat
+    </button>
+
+    <button
+          onclick="
+         c = Math.floor(Math.random() * 3 + 1);
+        console.log(c);
+        if (c == 1) computer = 'Bat';
+
+        if (c == 2) computer = 'Ball';
+
+        if (c == 3) computer = 'Wicket';
+
+        console.log('computer:' + computer);
+
+        user = 'Ball';
+        if (user === 'Ball' && computer === 'Ball') console.log('tie');
+        else if (user === 'Ball' && computer === 'Bat') console.log('Computer win');
+        else if (user === 'Ball' && computer === 'Wicket')
+          console.log('Ball');
+      "
+    >
+      Ball
+    </button>
+
+    <button
+      
+      onclick="
+         c = Math.floor(Math.random() * 3 + 1);
+        console.log(c);
+        if (c == 1) computer = 'Bat';
+
+        if (c == 2) computer = 'Ball';
+
+        if (c == 3) computer = 'Wicket';
+
+        console.log('computer:' + computer);
+
+        user = 'Wicket';
+        if (user === 'Wicket' && computer === 'Bat') console.log('user win');
+        else if (user === 'Wicket' && computer === 'Ball') console.log('Computer win');
+        else if (user === 'Wicket' && computer === 'Wicket')
+          console.log('Tie');
+      "
+    >
+      Wicket
+    </button>
+  </body>
+</html>

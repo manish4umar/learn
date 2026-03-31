@@ -1,41 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    
+  <head>
     <title>Basic Calculator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body ><center>
-    <h1>Basic Calculator</h1>
-    <div id="main">
-        <input type="text" id="display" readonly>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <center>
+      <h1>Basic Calculator</h1>
+      <div id="main">
+        <input type="text" id="display" readonly />
         <div id="btn-container">
-            <button class="MyBtn" style="background-color: rgb(231, 204, 73);">C</button>
-            <button class="MyBtn" onclick="display.value += '1';">1</button>
-            <button class="MyBtn" onclick="display.value += '2';">2</button>
-            <button class="MyBtn" onclick="display.value += '3';">3</button>
-            <button class="MyBtn" onclick="display.value += '+';" style="background-color: rgb(0, 255, 128) ";>+</button>
-            <button class="MyBtn" onclick="display.value += '4';">4</button>
-            <button class="MyBtn" onclick="display.value += '5';">5</button>
-            <button class="MyBtn" onclick="display.value += '6';">6</button>
-            <button class="MyBtn" onclick="display.value += '-';" style="background-color: rgb(0, 255, 128) ";>-</button>
-            <button class="MyBtn" onclick="display.value += '7';">7</button>
-            <button class="MyBtn" onclick="display.value += '8';">8</button>
-            <button class="MyBtn" onclick="display.value += '9';">9</button>
-            <button class="MyBtn" onclick="display.value += '*';" style="background-color: rgb(0, 255, 128) ";> *</button>
-            <button class="MyBtn" onclick="display.value += '/';" style="background-color: rgb(0, 255, 128) ";>/</button>
-            <button class="MyBtn" onclick="display.value += '0';">0</button>
-            <button class="MyBtn" style="background-color: yellow ";> x</button>
-            <button class="MyBtn" style="background-color: rgb(235, 236, 225);">=</button>
-            
-            
+          <button
+            class="MyBtn"
+            style="background-color: rgb(203, 22, 12)"
+            onclick="display.value = ''"
+          >
+            C
+          </button>
+          <button class="MyBtn" onclick="display.value += '1'">1</button>
+          <button class="MyBtn" onclick="display.value += '2'">2</button>
+          <button class="MyBtn" onclick="display.value += '3'">3</button>
+          <button
+            class="MyBtn"
+            onclick="display.value += '+'"
+            style="background-color: rgb(84, 97, 106)"
+            ;
+          >
+            +
+          </button>
+          <button class="MyBtn" onclick="display.value += '4'">4</button>
+          <button class="MyBtn" onclick="display.value += '5'">5</button>
+          <button class="MyBtn" onclick="display.value += '6'">6</button>
+          <button
+            class="MyBtn"
+            onclick="display.value += '-'"
+            style="background-color: rgb(84, 97, 106)"
+            ;
+          >
+            -
+          </button>
+          <button class="MyBtn" onclick="display.value += '7'">7</button>
+          <button class="MyBtn" onclick="display.value += '8'">8</button>
+          <button class="MyBtn" onclick="display.value += '9'">9</button>
+          <button
+            class="MyBtn"
+            onclick="display.value += '*'"
+            style="background-color: rgb(84, 97, 106)"
+            ;
+          >
+            *
+          </button>
+          <button
+            class="MyBtn"
+            onclick="display.value += '/'"
+            style="background-color: rgb(84, 97, 106)"
+            ;
+          >
+            /
+          </button>
+          <button class="MyBtn" onclick="display.value += '0'">0</button>
+          <button class="MyBtn" onclick="display.value += '.'">.</button>
+          <button
+            class="MyBtn"
+            style="background-color: rgba(108, 161, 38, 0.821)"
+            ;
+            onclick="
+              let str = display.value;
+              str = str.slice(0, -1);
+              display.value = str;
+            "
+          >
+            x
+          </button>
+          <button
+            class="MyBtn"
+            onclick="
+              let exp = display.value;
+              exp = eval(exp);
+              display.value = exp;
+            "
+            style="background-color: rgb(235, 236, 225)"
+          >
+            =
+          </button>
         </div>
-    </div>
-    <script>
-        let display = document.getElementById('display');
-        let val = '';
+      </div>
+      <script>
+        let display = document.getElementById("display");
+        let val = "";
         display.value = val;
-    </script>
+      </script>
     </center>
-</body>
+  </body>
 </html>
